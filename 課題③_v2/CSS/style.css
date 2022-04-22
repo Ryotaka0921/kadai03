@@ -1,0 +1,173 @@
+@charset "utf-8";
+
+html{
+    font-size: 62.5%;
+
+}
+
+body{
+    color: #333333;
+    font-family:"Open Sans",'ヒラギノ角ゴ ProN W3', Hiragino Kaku Gothic ProN, "メイリオ", Meiryo, sans-serif;
+    font-size: 1.6rem;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+header{
+    display: flex;
+    align-items:center;
+    height:60px; 
+    background: #64cbff;
+}
+
+.logo_fadein{
+	background: #FFF;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 999;
+}
+.logo_fadein p {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	display: none;
+	z-index: 9999;
+	width: 280px;
+}
+
+.header-logo{
+    float: left;
+    margin: 0 15px 0 15px;
+}
+
+.header{
+    font-family: "PicoBlackAl";
+    font-size: 5rem;
+    background: #64cbff;
+    color: white;
+    float: left;
+}
+
+.header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    height:60px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.tweetbox{
+    text-align: center;
+    appearance:none;
+    -webkit-apparance:none;
+    -moz-appearance:none;
+    padding: 8px;
+    margin: 50px 0 50px 0;
+    border:solid 1px #c9c9c9;
+    font-size: 3.0rem;
+    left: 50%;
+    border-right:none;
+    border-left:none;
+    border-top:none;
+    outline: none;
+}
+
+.tweetbtn{
+    font-weight: bold;
+    display: block;
+    width:214px;
+    margin: auto;
+    padding: 10px 0;
+    background: #64cbff;
+    color: #fff;
+    font-size: 1.8rem;
+    text-align: center;
+    border-radius: 100px;
+    transition: .3s;
+    border:solid 1px #ffffff;
+
+}
+
+.tweetbtn:hover{
+    cursor: pointer;
+	animation: tweetbtn .3s ease 0s;
+}
+
+@keyframes tweetbtn {
+	50% {
+		transform: scale(1.1);
+    }
+}
+
+.cancelbtn{
+    font-weight: bold;
+    display: block;
+    width:180px;
+    margin: 20px auto 40px auto;
+    padding: 10px 0;
+    background: #64cbff;
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+    border-radius: 100px;
+    transition: .3s;
+    border:solid 1px #ffffff;
+
+}
+
+.cancelbtn:hover{
+    background: blue;
+	animation: cancelbtn .3s ease 0s;
+}
+
+.centerposition{
+    text-align: center;
+}
+
+.timeline{
+    padding: 10px ;
+    margin-left: auto;
+    margin-right: auto;
+    color: #333333;
+}
+
+th {
+    height: 20px;               /* 高さ指定 */
+    font-size: 2 rem;
+}
+
+td {
+    font-size: 4 rem;
+}
+
+tr{
+    border-color: rgb(200, 200, 200);
+    border-style: solid;
+    border-width: 1px 0;
+}
+
+.thtag{
+   font-size: 1.4rem; 
+   text-align: left;
+   display: block;
+   width: 100%;
+   padding: 6px;
+}
+
+.tdtag{
+    font-size: 2.7rem; 
+    text-align: left;
+    display: block;
+    width: 100%;
+    padding: 2px 0 8px 6px;
+ }
